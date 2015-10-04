@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Despeisse Family's photos</title>
+
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script> -->
+
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.2/angular-material.min.css"/>
+  <link rel="stylesheet" href="app.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-aria.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.2/angular-material.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body ng-app="despApp">
+<div ng-controller="MainController">
+  <md-content>
+    <md-toolbar>
+      <h2 class="md-toolbar-tools">
+        <span>Photos de la Despeisse Family</span>
+      </h2>
+    </md-toolbar>
+    <div class="photo-list">
+      <div class="photo-thumbnail" ng-repeat="photo in photos" ng-click="viewPhoto(photo)">
+        <img ng-src="images/{{photo}}" />
+      </div>
+    </div>
+  </md-grid-list>
+  </md-content>
+</div>
+</body>
+</html>

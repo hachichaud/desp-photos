@@ -1,1 +1,1 @@
-# desp-photos
+python -m SimpleHTTPServer 3000
